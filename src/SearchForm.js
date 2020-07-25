@@ -12,6 +12,7 @@ export default function SearchForm({ params, onParamChange }) {
             value={params.description}
             name="description"
             type="text"
+            placeholder="Filter by title, benefits, companies, expertise"
           />
         </Form.Group>
         <Form.Group as={Col}>
@@ -21,6 +22,7 @@ export default function SearchForm({ params, onParamChange }) {
             value={params.location}
             name="location"
             type="text"
+            placeholder="Filter by city, state, zip code, or country"
           />
         </Form.Group>
         <Form.Group as={Col} xs="auto" classNamge="ml-2">
