@@ -12,7 +12,7 @@ export default function Job({ job }) {
           <div>
             <Card.Title>
               {job.title} -{" "}
-              <span className="text-muted font-weight-light">
+              <span className="h1 text-muted font-weight-light">
                 {job.company}
               </span>
             </Card.Title>

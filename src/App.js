@@ -4,6 +4,9 @@ import { Container } from "react-bootstrap";
 import Job from "./Job";
 import JobsPagination from "./JobsPagination";
 import SearchForm from "./SearchForm";
+import Spinner from "react-bootstrap/Spinner";
+// import logo from "./logo.svg";
+import "./style.css";
 
 function App() {
   const [params, setParams] = useState({});
@@ -24,7 +27,16 @@ function App() {
       <h2 className="mb-4">GitHub Jobs Finder</h2>
       <SearchForm params={params} onParamChange={handleParamChange} />
       <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-      {loading && <h4 className="ml-3">Loading your dream jobs...</h4>}
+      {loading && (
+        <Spinner
+          animation="border"
+          variant="secondary"
+          role="status"
+          className="mb-3"
+        >
+          <h4 className="sr-only ml-3">Loading...</h4>
+        </Spinner>
+      )}
       {error && <h4 className="ml-3">Oops. Please refresh.</h4>}
       {jobs.map((job) => {
         return <Job key={job.id} job={job} />;
