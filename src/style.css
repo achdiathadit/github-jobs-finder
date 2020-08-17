@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body,
 p,
@@ -7,5 +7,15 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  border-radius: 8px;
+}
+
+.card {
+  box-shadow: 1px 4px lightgray;
+  border: none;
+  border-radius: 8px;
 }
