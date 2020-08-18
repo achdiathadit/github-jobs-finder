@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import { Card, Badge, Button, Collapse } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 
